@@ -1,0 +1,50 @@
+# Game Ids
+
+Game ids are used by the update server to identify which game is being updated.
+
+| Game | id |
+| :---: | :---: |
+| geoblox | 1 |
+| lexicominos | 2 |
+| bouncedown | 3 |
+| drphlogistonsavestheearth | 4 |
+| minerdisturbance | 5 |
+| wizardrun | 6 |
+| 36cardtrick | 7 |
+| holdtheline | 8 |
+| starcannon | 9 |
+| stellarshard | 10 |
+| torquing | 11 |
+| trackcontroller | 12 |
+| transmogrify | 13 |
+| chess | 14 |
+| crazycrystals | 15 |
+| solknight | 16 |
+| tetralink | 17 |
+| aceofskies | 18 |
+| arcanistsmulti | 19 |
+| confined | 20 |
+| escapevector | 21 |
+| fleacircus | 22 |
+| hostilespawn_vengeance | 23 |
+| monkeypuzzle2 | 24 |
+| shatteredplans | 25 |
+| terraphoenix | 26 |
+| dekobloko | 31 |
+| dungeonassault | 32 |
+| torchallenge | 39 |
+| zombiedawn | 41 |
+| pixelate | 55 |
+| orbdefence | 60 |
+| pool | 61 |
+| vertigo2 | 64 |
+| brickabrac | 65 |
+| armiesofgielinor | 68 |
+| kickabout | 69 |
+| bachelorfridge | 70 |
+| steelsentinels | 71 |
+| zombiedawnmulti | 72 |
+| virogrid | 77 |
+| tombracer | 81 |
+| voidhunters | 92 |
+| sumoblitz | 100 |
