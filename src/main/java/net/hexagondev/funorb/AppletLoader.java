@@ -1,14 +1,11 @@
 package net.hexagondev.funorb;
 
-import com.google.gson.Gson;
-
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
 import java.applet.Applet;
 import java.applet.AppletContext;
 import java.applet.AppletStub;
 import java.awt.Dimension;
-import java.io.FileReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
@@ -23,7 +20,7 @@ public class AppletLoader implements AppletStub {
         this.gameMetadata = gameMetadata;
     }
 
-    public void initialize() throws Exception {
+    public void launch() throws Exception {
         Path gamepackPath = Paths.get("funorb", gameMetadata.getInternalName(), "gamepack.jar");
         URLClassLoader classLoader = new URLClassLoader(new URL[] {gamepackPath.toUri().toURL()});
 
@@ -80,16 +77,5 @@ public class AppletLoader implements AppletStub {
 
     @Override
     public void appletResize(int width, int height) {
-    }
-
-    public static void main(String[] args) throws Exception {
-        Gson gson = new Gson();
-
-        try (FileReader reader = new FileReader("funorb/escapevector/metadata.json")) {
-            GameMetadata gameMetadata = gson.fromJson(reader, GameMetadata.class);
-
-            AppletLoader loader = new AppletLoader(gameMetadata);
-            loader.initialize();
-        }
     }
 }
